@@ -1,0 +1,159 @@
+{
+	"training":
+  
+  [
+    {
+        "response": "google_search",
+        "input": "joga no Google",
+        "answer": "Pesquisando no google"
+    },
+    {
+        "response": "google_search",
+        "input": "pesquisa no Google",
+        "answer": "Pesquisando no google"
+    },
+    {
+        "response": "google_search",
+        "input": "pesquisa no Google para mim",
+        "answer": "Pesquisando no google"
+    },
+    {
+        "response": "google_search",
+        "input": "pesquisa para mim",
+        "answer": "Pesquisando no google"
+    },
+    {
+        "response": "google_search",
+        "input": "Da um Google para mim",
+        "answer": "Pesquisando no google"
+    },
+    {
+        "response": "google_search",
+        "input": "Pesquisa isso no Google para mim",
+        "answer": "Pesquisando no google"
+    },
+    {
+        "response": "google_search",
+        "input": "pesquisa no Google",
+        "answer": "Pesquisando no google"
+    }
+
+	]
+}
+
+  {
+        "input": "Que dia é hoje",
+        "response": "date",
+        "answer": "Atualmente é $date"
+    },
+    {
+        "input": "Qual o dia da semana é",
+        "response": "date",
+        "answer": "O dia de hoje cai em um $date"
+    },
+    {
+        "input": "Qual o dia da semana é hoje",
+        "response": "date",
+        "answer": "O dia de hoje é $date"
+    },
+    {
+        "input": "Em que dia estamos",
+        "response": "date",
+        "answer": "Atualmente, estamos no dia $date"
+    },
+    {
+        "input": "Hoje é que dia",
+        "response": "date",
+        "answer": "Hoje é $date"
+    },
+    {
+        "input": "qual dia",
+        "response": "date",
+        "answer": "Atualmente é $date"
+    },
+    {
+        "input": "qual o dia",
+        "response": "date",
+        "answer": "O dia de hoje cai em um $date"
+    },
+    {
+        "input": "qual o dia é",
+        "response": "date",
+        "answer": "O dia de hoje é $date"
+    },
+    {
+        "input": "hoje é",
+        "response": "date",
+        "answer": "Hoje é $date"
+    },
+    {
+        "input": "já é dia",
+        "response": "date",
+        "answer": "Atualmente, estamos no dia $date"
+    },
+    {
+        "input": "Já estamos em",
+        "response": "date",
+        "answer": "O dia de hoje cai em um $date"
+    }  
+
+{
+        "input": "Que horas são",
+        "response": "time",
+        "answer": "São exatamente $time"
+    },
+    {
+        "input": "Quais são as suas horas",
+        "response": "time",
+        "answer": "Agora são $time"
+    },
+    {
+        "input": "Quais são as horas",
+        "response": "time",
+        "answer": "São $time no meu relógio"
+    },
+    {
+        "input": "horas",
+        "response": "time",
+        "answer": "A hora atual é $time"
+    },
+    {
+        "input": "Me dê as horas",
+        "response": "time",
+        "answer": "Estamos em $time agora"
+    },
+    {
+        "input": "que hora é",
+        "response": "time",
+        "answer": "Com prazer, agora são $time"
+    },
+    {
+        "input": "Qual é a hora",
+        "response": "time",
+        "answer": "A hora atual é $time"
+    },
+    {
+        "input": "Em que momento estamos",
+        "response": "time",
+        "answer": "Estamos atualmente em $time"
+    },
+    {
+        "input": "já é de manhã",
+        "response": "time",
+        "answer": "Agora são $time"
+    },
+    {
+        "input": "já é de noite",
+        "response": "time",
+        "answer": "Agora são $time"
+    },
+    {
+        "input": "já é de tarde",
+        "response": "time",
+        "answer": "Agora são $time"
+    },
+    {
+        "input": "já passou das",
+        "response": "time",
+        "answer": "Agora são $time"
+    }
