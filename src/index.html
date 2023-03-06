@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat App</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      #messages-container {
+        flex-grow: 1;
+        padding: 10px;
+        height: 75vh;
+      }
+
+      ul {
+        height: 100%;
+        overflow-y: auto;
+      }
+
+      #messages {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      #message-form {
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        padding: 0 10px;
+      }
+
+      #message-input {
+        flex-grow: 1;
+        margin-right: 10px;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+      }
+
+      button {
+        padding: 5px 10px;
+        border-radius: 5px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Chat App</h1>
+    <div id="messages-container">
+      <ul id="messages"></ul>
+    </div>
+    <form id="message-form">
+      <input id="message-input" type="text" autocomplete="off" />
+      <button type="submit">Send</button>
+    </form>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      const socket = io();
+
+      const messages = document.getElementById('messages');
+      const messageForm = document.getElementById('message-form');
+      const messageInput = document.getElementById('message-input');
+
+      socket.on('recive_message', (msg) => {
+        console.log(msg)
+        const li = document.createElement('li');
+        li.textContent = msg;
+        messages.appendChild(li);
+        messagesContainer.scrollTo(0, messagesContainer.scrollHeight);
+      });
+
+      messageForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const message = messageInput.value.trim();
+        if (message) {
+          socket.emit('message', { message, user: { dbID: 'wehfoihefhweoifhowe', name: "Keven" }});
+          messageInput.value = '';
+        }
+      });
+
+      const messagesContainer = document.getElementById('messages-container');
+      messagesContainer.scrollTo(0, messagesContainer.scrollHeight);
+    </script>
+  </body>
+</html>

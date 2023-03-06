@@ -1,0 +1,1404 @@
+{
+  "settings": {
+    "languages": [
+      "pt"
+    ],
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "executeActionsBeforeAnswers": false,
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "pt"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "pt": {
+        "settings": {
+          "locale": "pt",
+          "trainByDomain": false,
+          "tag": "domain-manager-pt",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "hor,que,sao": {
+            "intent": "time",
+            "domain": "default"
+          },
+          "as,hor,qua,sao,suas": {
+            "intent": "time",
+            "domain": "default"
+          },
+          "as,hor,qua,sao": {
+            "intent": "time",
+            "domain": "default"
+          },
+          "hor": {
+            "intent": "time",
+            "domain": "default"
+          },
+          "as,de,hor,me": {
+            "intent": "time",
+            "domain": "default"
+          },
+          "e,hor,que": {
+            "intent": "time",
+            "domain": "default"
+          },
+          "a,e,hor,qual": {
+            "intent": "time",
+            "domain": "default"
+          },
+          "em,estam,moment,que": {
+            "intent": "time",
+            "domain": "default"
+          },
+          "de,e,ja,manh": {
+            "intent": "time",
+            "domain": "default"
+          },
+          "de,e,ja,noit": {
+            "intent": "time",
+            "domain": "default"
+          },
+          "de,e,ja,tard": {
+            "intent": "time",
+            "domain": "default"
+          },
+          "das,ja,pass": {
+            "intent": "time",
+            "domain": "default"
+          },
+          "dia,e,hoj,que": {
+            "intent": "date",
+            "domain": "default"
+          },
+          "da,dia,e,o,qual,seman": {
+            "intent": "date",
+            "domain": "default"
+          },
+          "da,dia,e,hoj,o,qual,seman": {
+            "intent": "date",
+            "domain": "default"
+          },
+          "dia,em,estam,que": {
+            "intent": "date",
+            "domain": "default"
+          },
+          "dia,qual": {
+            "intent": "date",
+            "domain": "default"
+          },
+          "dia,o,qual": {
+            "intent": "date",
+            "domain": "default"
+          },
+          "dia,e,o,qual": {
+            "intent": "date",
+            "domain": "default"
+          },
+          "e,hoj": {
+            "intent": "date",
+            "domain": "default"
+          },
+          "dia,e,ja": {
+            "intent": "date",
+            "domain": "default"
+          },
+          "em,estam,ja": {
+            "intent": "date",
+            "domain": "default"
+          },
+          "googl,jog,no": {
+            "intent": "google_search",
+            "domain": "default"
+          },
+          "googl,no,pesquis": {
+            "intent": "google_search",
+            "domain": "default"
+          },
+          "googl,mim,no,par,pesquis": {
+            "intent": "google_search",
+            "domain": "default"
+          },
+          "mim,par,pesquis": {
+            "intent": "google_search",
+            "domain": "default"
+          },
+          "da,googl,mim,par,um": {
+            "intent": "google_search",
+            "domain": "default"
+          },
+          "googl,isso,mim,no,par,pesquis": {
+            "intent": "google_search",
+            "domain": "default"
+          },
+          "oi": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "ola": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "oii": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "oiiii": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "oiiiiiiiiiiiii": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "oiie": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "saudaco": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "bom,dia": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "bom,dia,jarv": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "bomm,diaaa": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "boa,tard": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "boa,noit": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "bom,com,dia,jarv,vai": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "bom,com,jarv,noit,vai": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "bom,com,jarv,tard,vai": {
+            "intent": "greeting",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "time": "default",
+          "date": "default",
+          "google_search": "default",
+          "greeting": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "Que horas são",
+            "intent": "time"
+          },
+          {
+            "domain": "default",
+            "utterance": "Quais são as suas horas",
+            "intent": "time"
+          },
+          {
+            "domain": "default",
+            "utterance": "Quais são as horas",
+            "intent": "time"
+          },
+          {
+            "domain": "default",
+            "utterance": "horas",
+            "intent": "time"
+          },
+          {
+            "domain": "default",
+            "utterance": "Me dê as horas",
+            "intent": "time"
+          },
+          {
+            "domain": "default",
+            "utterance": "que hora é",
+            "intent": "time"
+          },
+          {
+            "domain": "default",
+            "utterance": "Qual é a hora",
+            "intent": "time"
+          },
+          {
+            "domain": "default",
+            "utterance": "Em que momento estamos",
+            "intent": "time"
+          },
+          {
+            "domain": "default",
+            "utterance": "já é de manhã",
+            "intent": "time"
+          },
+          {
+            "domain": "default",
+            "utterance": "já é de noite",
+            "intent": "time"
+          },
+          {
+            "domain": "default",
+            "utterance": "já é de tarde",
+            "intent": "time"
+          },
+          {
+            "domain": "default",
+            "utterance": "já passou das",
+            "intent": "time"
+          },
+          {
+            "domain": "default",
+            "utterance": "Que horas são",
+            "intent": "time"
+          },
+          {
+            "domain": "default",
+            "utterance": "Quais são as suas horas",
+            "intent": "time"
+          },
+          {
+            "domain": "default",
+            "utterance": "Quais são as horas",
+            "intent": "time"
+          },
+          {
+            "domain": "default",
+            "utterance": "horas",
+            "intent": "time"
+          },
+          {
+            "domain": "default",
+            "utterance": "Me dê as horas",
+            "intent": "time"
+          },
+          {
+            "domain": "default",
+            "utterance": "que hora é",
+            "intent": "time"
+          },
+          {
+            "domain": "default",
+            "utterance": "Qual é a hora",
+            "intent": "time"
+          },
+          {
+            "domain": "default",
+            "utterance": "Em que momento estamos",
+            "intent": "time"
+          },
+          {
+            "domain": "default",
+            "utterance": "já é de manhã",
+            "intent": "time"
+          },
+          {
+            "domain": "default",
+            "utterance": "já é de noite",
+            "intent": "time"
+          },
+          {
+            "domain": "default",
+            "utterance": "já é de tarde",
+            "intent": "time"
+          },
+          {
+            "domain": "default",
+            "utterance": "já passou das",
+            "intent": "time"
+          },
+          {
+            "domain": "default",
+            "utterance": "Que dia é hoje",
+            "intent": "date"
+          },
+          {
+            "domain": "default",
+            "utterance": "Qual o dia da semana é",
+            "intent": "date"
+          },
+          {
+            "domain": "default",
+            "utterance": "Qual o dia da semana é hoje",
+            "intent": "date"
+          },
+          {
+            "domain": "default",
+            "utterance": "Em que dia estamos",
+            "intent": "date"
+          },
+          {
+            "domain": "default",
+            "utterance": "Hoje é que dia",
+            "intent": "date"
+          },
+          {
+            "domain": "default",
+            "utterance": "qual dia",
+            "intent": "date"
+          },
+          {
+            "domain": "default",
+            "utterance": "qual o dia",
+            "intent": "date"
+          },
+          {
+            "domain": "default",
+            "utterance": "qual o dia é",
+            "intent": "date"
+          },
+          {
+            "domain": "default",
+            "utterance": "hoje é",
+            "intent": "date"
+          },
+          {
+            "domain": "default",
+            "utterance": "já é dia",
+            "intent": "date"
+          },
+          {
+            "domain": "default",
+            "utterance": "Já estamos em",
+            "intent": "date"
+          },
+          {
+            "domain": "default",
+            "utterance": "joga no Google",
+            "intent": "google_search"
+          },
+          {
+            "domain": "default",
+            "utterance": "pesquisa no Google",
+            "intent": "google_search"
+          },
+          {
+            "domain": "default",
+            "utterance": "pesquisa no Google para mim",
+            "intent": "google_search"
+          },
+          {
+            "domain": "default",
+            "utterance": "pesquisa para mim",
+            "intent": "google_search"
+          },
+          {
+            "domain": "default",
+            "utterance": "Da um Google para mim",
+            "intent": "google_search"
+          },
+          {
+            "domain": "default",
+            "utterance": "Pesquisa isso no Google para mim",
+            "intent": "google_search"
+          },
+          {
+            "domain": "default",
+            "utterance": "pesquisa no Google",
+            "intent": "google_search"
+          },
+          {
+            "domain": "default",
+            "utterance": "Oi",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "Olá",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "Oii",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "Oiiii",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "Oiiiiiiiiiiiii",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "Oiiiiiiiiiiiii",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "Oiie",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "Saudações",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "Bom dia",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "Bom dia Jarvis",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "Bomm diaaaa",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "Boa tarde",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "Boa noite",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "Bom dia Jarvis, como vai ?",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "Bom noite Jarvis, como vai ?",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "Bom tarde Jarvis, como vai ?",
+            "intent": "greeting"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "pt",
+              "tag": "nlu-pt",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "que": 1,
+              "hor": 1,
+              "sao": 1,
+              "qua": 1,
+              "as": 1,
+              "suas": 1,
+              "me": 1,
+              "de": 1,
+              "e": 1,
+              "qual": 1,
+              "a": 1,
+              "em": 1,
+              "moment": 1,
+              "estam": 1,
+              "ja": 1,
+              "manh": 1,
+              "noit": 1,
+              "tard": 1,
+              "pass": 1,
+              "das": 1,
+              "dia": 1,
+              "hoj": 1,
+              "o": 1,
+              "da": 1,
+              "seman": 1,
+              "jog": 1,
+              "no": 1,
+              "googl": 1,
+              "pesquis": 1,
+              "par": 1,
+              "mim": 1,
+              "um": 1,
+              "isso": 1,
+              "oi": 1,
+              "ola": 1,
+              "oii": 1,
+              "oiiii": 1,
+              "oiiiiiiiiiiiii": 1,
+              "oiie": 1,
+              "saudaco": 1,
+              "bom": 1,
+              "jarv": 1,
+              "bomm": 1,
+              "diaaa": 1,
+              "boa": 1,
+              "com": 1,
+              "vai": 1
+            },
+            "intents": {
+              "time": 1,
+              "date": 1,
+              "google_search": 1,
+              "greeting": 1
+            },
+            "intentFeatures": {
+              "time": {
+                "que": 1,
+                "hor": 1,
+                "sao": 1,
+                "qua": 1,
+                "as": 1,
+                "suas": 1,
+                "me": 1,
+                "de": 1,
+                "e": 1,
+                "qual": 1,
+                "a": 1,
+                "em": 1,
+                "moment": 1,
+                "estam": 1,
+                "ja": 1,
+                "manh": 1,
+                "noit": 1,
+                "tard": 1,
+                "pass": 1,
+                "das": 1
+              },
+              "date": {
+                "que": 1,
+                "dia": 1,
+                "e": 1,
+                "hoj": 1,
+                "qual": 1,
+                "o": 1,
+                "da": 1,
+                "seman": 1,
+                "em": 1,
+                "estam": 1,
+                "ja": 1
+              },
+              "google_search": {
+                "jog": 1,
+                "no": 1,
+                "googl": 1,
+                "pesquis": 1,
+                "par": 1,
+                "mim": 1,
+                "da": 1,
+                "um": 1,
+                "isso": 1
+              },
+              "greeting": {
+                "oi": 1,
+                "ola": 1,
+                "oii": 1,
+                "oiiii": 1,
+                "oiiiiiiiiiiiii": 1,
+                "oiie": 1,
+                "saudaco": 1,
+                "bom": 1,
+                "dia": 1,
+                "jarv": 1,
+                "bomm": 1,
+                "diaaa": 1,
+                "boa": 1,
+                "tard": 1,
+                "noit": 1,
+                "com": 1,
+                "vai": 1
+              }
+            },
+            "featuresToIntent": {
+              "que": [
+                "time",
+                "date"
+              ],
+              "hor": [
+                "time"
+              ],
+              "sao": [
+                "time"
+              ],
+              "qua": [
+                "time"
+              ],
+              "as": [
+                "time"
+              ],
+              "suas": [
+                "time"
+              ],
+              "me": [
+                "time"
+              ],
+              "de": [
+                "time"
+              ],
+              "e": [
+                "time",
+                "date"
+              ],
+              "qual": [
+                "time",
+                "date"
+              ],
+              "a": [
+                "time"
+              ],
+              "em": [
+                "time",
+                "date"
+              ],
+              "moment": [
+                "time"
+              ],
+              "estam": [
+                "time",
+                "date"
+              ],
+              "ja": [
+                "time",
+                "date"
+              ],
+              "manh": [
+                "time"
+              ],
+              "noit": [
+                "time",
+                "greeting"
+              ],
+              "tard": [
+                "time",
+                "greeting"
+              ],
+              "pass": [
+                "time"
+              ],
+              "das": [
+                "time"
+              ],
+              "dia": [
+                "date",
+                "greeting"
+              ],
+              "hoj": [
+                "date"
+              ],
+              "o": [
+                "date"
+              ],
+              "da": [
+                "date",
+                "google_search"
+              ],
+              "seman": [
+                "date"
+              ],
+              "jog": [
+                "google_search"
+              ],
+              "no": [
+                "google_search"
+              ],
+              "googl": [
+                "google_search"
+              ],
+              "pesquis": [
+                "google_search"
+              ],
+              "par": [
+                "google_search"
+              ],
+              "mim": [
+                "google_search"
+              ],
+              "um": [
+                "google_search"
+              ],
+              "isso": [
+                "google_search"
+              ],
+              "oi": [
+                "greeting"
+              ],
+              "ola": [
+                "greeting"
+              ],
+              "oii": [
+                "greeting"
+              ],
+              "oiiii": [
+                "greeting"
+              ],
+              "oiiiiiiiiiiiii": [
+                "greeting"
+              ],
+              "oiie": [
+                "greeting"
+              ],
+              "saudaco": [
+                "greeting"
+              ],
+              "bom": [
+                "greeting"
+              ],
+              "jarv": [
+                "greeting"
+              ],
+              "bomm": [
+                "greeting"
+              ],
+              "diaaa": [
+                "greeting"
+              ],
+              "boa": [
+                "greeting"
+              ],
+              "com": [
+                "greeting"
+              ],
+              "vai": [
+                "greeting"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "pt",
+                "tag": "nlu-pt",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "que",
+                "hor",
+                "sao",
+                "qua",
+                "as",
+                "suas",
+                "me",
+                "de",
+                "e",
+                "qual",
+                "a",
+                "em",
+                "moment",
+                "estam",
+                "ja",
+                "manh",
+                "noit",
+                "tard",
+                "pass",
+                "das",
+                "dia",
+                "hoj",
+                "o",
+                "da",
+                "seman",
+                "jog",
+                "no",
+                "googl",
+                "pesquis",
+                "par",
+                "mim",
+                "um",
+                "isso",
+                "oi",
+                "ola",
+                "oii",
+                "oiiii",
+                "oiiiiiiiiiiiii",
+                "oiie",
+                "saudaco",
+                "bom",
+                "jarv",
+                "bomm",
+                "diaaa",
+                "boa",
+                "com",
+                "vai"
+              ],
+              "intents": [
+                "time",
+                "date",
+                "google_search",
+                "greeting"
+              ],
+              "perceptrons": [
+                [
+                  0.2645891606807709,
+                  12.50828742980957,
+                  -0.26442769169807434,
+                  2.9713776111602783,
+                  -2.7068071365356445,
+                  0.000006548959845531499,
+                  -5.678183555603027,
+                  8.385162353515625,
+                  -0.2643817663192749,
+                  -0.5078144669532776,
+                  0.7723466157913208,
+                  -1.6892458200454712,
+                  15.622279167175293,
+                  -1.6892458200454712,
+                  1.601333498954773,
+                  2.78631329536438,
+                  2.786297082901001,
+                  2.786294937133789,
+                  5.453545093536377,
+                  5.453545093536377,
+                  -6.766598701477051,
+                  -3.439570665359497,
+                  -1.098670482635498,
+                  -0.919317901134491,
+                  -0.6965985894203186,
+                  -0.29338008165359497,
+                  -0.8551118969917297,
+                  -0.9358081221580505,
+                  -0.8004152178764343,
+                  -0.5392023324966431,
+                  -0.5392023324966431,
+                  -0.03999130427837372,
+                  -0.016230421140789986,
+                  -1.7772706747055054,
+                  -1.7772698402404785,
+                  -1.7772691249847412,
+                  -1.777268409729004,
+                  -1.7772759199142456,
+                  -1.7772670984268188,
+                  -1.7772663831710815,
+                  -1.1408928632736206,
+                  -1.1408928632736206,
+                  -0.888637363910675,
+                  -0.888637363910675,
+                  -4.563557147979736,
+                  -1.1408928632736206,
+                  -1.1408928632736206,
+                  1.7772773136536009
+                ],
+                [
+                  -3.2723920345306396,
+                  -7.496306419372559,
+                  -0.2717399597167969,
+                  -0.0702512189745903,
+                  -0.11073563992977142,
+                  -0.032363418489694595,
+                  -0.021540524438023567,
+                  -6.813692569732666,
+                  3.6659607887268066,
+                  4.575264930725098,
+                  -5.8019890785217285,
+                  3.993206739425659,
+                  -9.745052337646484,
+                  3.993206739425659,
+                  0.9393613338470459,
+                  -2.8456482887268066,
+                  -2.9842071533203125,
+                  -2.9892094135284424,
+                  -2.9885377883911133,
+                  -2.9885377883911133,
+                  4.686702251434326,
+                  3.9188082218170166,
+                  -1.995003581047058,
+                  -2.129077911376953,
+                  -1.7867717742919922,
+                  -1.2381004095077515,
+                  -1.7512800693511963,
+                  -2.093585252761841,
+                  -1.6717499494552612,
+                  -1.7047990560531616,
+                  -1.7047990560531616,
+                  -0.23828990757465363,
+                  -0.0037887650541961193,
+                  -4.977737903594971,
+                  -4.972718238830566,
+                  -4.967693328857422,
+                  -4.962662220001221,
+                  -5.030796051025391,
+                  -4.952624797821045,
+                  -4.947578430175781,
+                  -9.730107307434082,
+                  -2.4517266750335693,
+                  -2.5089504718780518,
+                  -2.5089504718780518,
+                  -2.051699638366699,
+                  -0.6994529962539673,
+                  -0.6994529962539673,
+                  5.078429497792287
+                ],
+                [
+                  -0.580565333366394,
+                  -2.2531392574310303,
+                  -0.22430749237537384,
+                  -0.09981400519609451,
+                  -0.15631255507469177,
+                  -0.04451066255569458,
+                  -0.02884688228368759,
+                  -0.194821298122406,
+                  -1.7201156616210938,
+                  -1.0743769407272339,
+                  -0.038826216012239456,
+                  -0.6274879574775696,
+                  -0.4201338589191437,
+                  -0.6274879574775696,
+                  -1.000190258026123,
+                  -0.06063222140073776,
+                  -0.8224563598632812,
+                  -0.8224925994873047,
+                  -0.6275733709335327,
+                  -0.6275733709335327,
+                  -1.5730133056640625,
+                  -0.53448486328125,
+                  -0.9993448257446289,
+                  4.104844570159912,
+                  -0.9907328486442566,
+                  11.786881446838379,
+                  -2.4426212310791016,
+                  2.6532089710235596,
+                  11.786859512329102,
+                  0.0828114002943039,
+                  0.0828114002943039,
+                  5.095362663269043,
+                  -0.1498563289642334,
+                  -2.25215220451355,
+                  -2.251901388168335,
+                  -2.251648426055908,
+                  -2.251394510269165,
+                  -2.2545783519744873,
+                  -2.250900983810425,
+                  -2.2506418228149414,
+                  -0.6831298470497131,
+                  -0.3289230167865753,
+                  -1.127023458480835,
+                  -1.127023458480835,
+                  -1.432570219039917,
+                  -0.21093787252902985,
+                  -0.21093787252902985,
+                  2.256538011463618
+                ],
+                [
+                  -3.7379772663116455,
+                  -8.995482444763184,
+                  -1.6029616594314575,
+                  -0.9672363996505737,
+                  -1.3495872020721436,
+                  -0.4772435128688812,
+                  -0.3139065206050873,
+                  -2.0709893703460693,
+                  -5.827779769897461,
+                  -8.81234073638916,
+                  -0.19293437898159027,
+                  -2.5372281074523926,
+                  -1.2257423400878906,
+                  -2.5372281074523926,
+                  -4.247861385345459,
+                  -0.373049795627594,
+                  -0.1516951322555542,
+                  -0.1516885906457901,
+                  -2.3768739700317383,
+                  -2.3768739700317383,
+                  -0.15223513543605804,
+                  -3.154996633529663,
+                  -2.1314306259155273,
+                  -0.9628883004188538,
+                  -0.548590898513794,
+                  -2.034254312515259,
+                  -3.285235643386841,
+                  -3.6642279624938965,
+                  -3.385326623916626,
+                  -2.7991671562194824,
+                  -2.7991671562194824,
+                  -0.3380328416824341,
+                  -0.013761688955128193,
+                  5.321009159088135,
+                  5.321008205413818,
+                  5.32100772857666,
+                  5.321006774902344,
+                  5.321013450622559,
+                  5.321005344390869,
+                  5.321004867553711,
+                  5.47324275970459,
+                  0.00020630272047128528,
+                  2.660508871078491,
+                  2.660508871078491,
+                  5.472646713256836,
+                  -0.00030535098630934954,
+                  -0.00030535098630934954,
+                  8.964699853287382
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "pt",
+        "Que horas são"
+      ],
+      [
+        "pt",
+        "Quais são as suas horas"
+      ],
+      [
+        "pt",
+        "Quais são as horas"
+      ],
+      [
+        "pt",
+        "horas"
+      ],
+      [
+        "pt",
+        "Me dê as horas"
+      ],
+      [
+        "pt",
+        "que hora é"
+      ],
+      [
+        "pt",
+        "Qual é a hora"
+      ],
+      [
+        "pt",
+        "Em que momento estamos"
+      ],
+      [
+        "pt",
+        "já é de manhã"
+      ],
+      [
+        "pt",
+        "já é de noite"
+      ],
+      [
+        "pt",
+        "já é de tarde"
+      ],
+      [
+        "pt",
+        "já passou das"
+      ],
+      [
+        "pt",
+        "Que horas são"
+      ],
+      [
+        "pt",
+        "Quais são as suas horas"
+      ],
+      [
+        "pt",
+        "Quais são as horas"
+      ],
+      [
+        "pt",
+        "horas"
+      ],
+      [
+        "pt",
+        "Me dê as horas"
+      ],
+      [
+        "pt",
+        "que hora é"
+      ],
+      [
+        "pt",
+        "Qual é a hora"
+      ],
+      [
+        "pt",
+        "Em que momento estamos"
+      ],
+      [
+        "pt",
+        "já é de manhã"
+      ],
+      [
+        "pt",
+        "já é de noite"
+      ],
+      [
+        "pt",
+        "já é de tarde"
+      ],
+      [
+        "pt",
+        "já passou das"
+      ],
+      [
+        "pt",
+        "Que dia é hoje"
+      ],
+      [
+        "pt",
+        "Qual o dia da semana é"
+      ],
+      [
+        "pt",
+        "Qual o dia da semana é hoje"
+      ],
+      [
+        "pt",
+        "Em que dia estamos"
+      ],
+      [
+        "pt",
+        "Hoje é que dia"
+      ],
+      [
+        "pt",
+        "qual dia"
+      ],
+      [
+        "pt",
+        "qual o dia"
+      ],
+      [
+        "pt",
+        "qual o dia é"
+      ],
+      [
+        "pt",
+        "hoje é"
+      ],
+      [
+        "pt",
+        "já é dia"
+      ],
+      [
+        "pt",
+        "Já estamos em"
+      ],
+      [
+        "pt",
+        "joga no Google"
+      ],
+      [
+        "pt",
+        "pesquisa no Google"
+      ],
+      [
+        "pt",
+        "pesquisa no Google para mim"
+      ],
+      [
+        "pt",
+        "pesquisa para mim"
+      ],
+      [
+        "pt",
+        "Da um Google para mim"
+      ],
+      [
+        "pt",
+        "Pesquisa isso no Google para mim"
+      ],
+      [
+        "pt",
+        "pesquisa no Google"
+      ],
+      [
+        "pt",
+        "Oi"
+      ],
+      [
+        "pt",
+        "Olá"
+      ],
+      [
+        "pt",
+        "Oii"
+      ],
+      [
+        "pt",
+        "Oiiii"
+      ],
+      [
+        "pt",
+        "Oiiiiiiiiiiiii"
+      ],
+      [
+        "pt",
+        "Oiiiiiiiiiiiii"
+      ],
+      [
+        "pt",
+        "Oiie"
+      ],
+      [
+        "pt",
+        "Saudações"
+      ],
+      [
+        "pt",
+        "Bom dia"
+      ],
+      [
+        "pt",
+        "Bom dia Jarvis"
+      ],
+      [
+        "pt",
+        "Bomm diaaaa"
+      ],
+      [
+        "pt",
+        "Boa tarde"
+      ],
+      [
+        "pt",
+        "Boa noite"
+      ],
+      [
+        "pt",
+        "Bom dia Jarvis, como vai ?"
+      ],
+      [
+        "pt",
+        "Bom noite Jarvis, como vai ?"
+      ],
+      [
+        "pt",
+        "Bom tarde Jarvis, como vai ?"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "pt": {
+        "time": [
+          {
+            "answer": "São exatamente $time"
+          },
+          {
+            "answer": "Agora são $time"
+          },
+          {
+            "answer": "São $time no meu relógio"
+          },
+          {
+            "answer": "A hora atual é $time"
+          },
+          {
+            "answer": "Estamos em $time agora"
+          },
+          {
+            "answer": "Com prazer, agora são $time"
+          },
+          {
+            "answer": "Estamos atualmente em $time"
+          }
+        ],
+        "date": [
+          {
+            "answer": "Atualmente é $date"
+          },
+          {
+            "answer": "O dia de hoje cai em um $date"
+          },
+          {
+            "answer": "O dia de hoje é $date"
+          },
+          {
+            "answer": "Atualmente, estamos no dia $date"
+          },
+          {
+            "answer": "Hoje é $date"
+          }
+        ],
+        "google_search": [
+          {
+            "answer": "Pesquisando no google"
+          }
+        ],
+        "greeting": [
+          {
+            "answer": "Olá $user.gender"
+          },
+          {
+            "answer": "Olá $user.gender pronto para seus serviços"
+          },
+          {
+            "answer": "Saudações $user.gender"
+          },
+          {
+            "answer": "Bom dia $user.gender"
+          },
+          {
+            "answer": "Bom tarde $user.gender"
+          },
+          {
+            "answer": "Bom noite $user.gender"
+          },
+          {
+            "answer": "Bom dia $user.gender, vou bem"
+          },
+          {
+            "answer": "Bom noite $user.gender, vou bem"
+          },
+          {
+            "answer": "Bom tarde $user.gender, vou bem"
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}
